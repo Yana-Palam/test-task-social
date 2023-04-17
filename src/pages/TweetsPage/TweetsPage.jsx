@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AiOutlineRollback } from 'react-icons/ai';
 import TweetsList from 'components/TweetsList/TweetsList';
+import ButtonUp from 'components/ButtonUp/ButtonUp';
+
 import Container from 'components/Container/Container';
 import Filter from 'components/Filter/Filter';
 import {
@@ -39,6 +41,7 @@ function TweetsPage() {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, filter]);
 
   const onLoadMore = () => {
@@ -69,6 +72,7 @@ function TweetsPage() {
           </Button>
         )}
       </Wrapper>
+      <ButtonUp />
     </Container>
   );
 }
