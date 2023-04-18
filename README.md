@@ -25,10 +25,10 @@
 
 <img src="/assets/demo.gif" width="100%">
 
-<h2>Стек ехнологій</h2>
+<h2>Стек технологій</h2>
 <ul>
 <li>JavaScript</li>
-<li> ReactJS</li>
+<li>ReactJS</li>
 <li>Redux Toolkit</li>
 <li>React Router</li>
 <li>React Hooks</li>
@@ -40,6 +40,6 @@
 <ul>
 <li>Проект розроблений за допомогою бібліотеки React</li>
 <li>Проект зібраний за допомогою create-react-app</li>
-<li>Використана бібліотека Redux-toolkit для управління станом</li>
+<li>Використана бібліотека Redux Toolkit для управління станом</li>
 <li>Створено свій персональний бекенд для розробки за допомогою UI-сервісу mockapi.io</li>
 </ul>

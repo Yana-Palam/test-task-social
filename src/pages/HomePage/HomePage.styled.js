@@ -44,21 +44,12 @@ export const Title = styled.h1`
   font-size: 30px;
   color: var(--mainColor);
   width: 100%;
-
-  /* @media (min-width: 810px) {
-    width: 80px;
-  } */
 `;
 
 export const Text = styled.p`
-  /* width: 800px; */
   font-size: 20px;
   color: var(--mainColor);
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
-
-  /* @media (min-width: 410px) {
-    width: 380px;
-  } */
 `;

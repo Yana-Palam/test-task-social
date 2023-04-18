@@ -19,6 +19,6 @@ export const filtersSlice = createSlice({
   },
 });
 
-export const { setFilter, incrementPage, resetPage } = filtersSlice.actions;
+export const { setFilter, incrementPage } = filtersSlice.actions;
 
 export default filtersSlice.reducer;
