@@ -11,7 +11,6 @@ export const Button = styled.button`
 
   color: #ebd8ff;
   border: none;
-  /* margin-bottom: 30px; */
   padding: 14px 28px;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -26,8 +25,9 @@ export const Button = styled.button`
 `;
 
 export const Wrapper = styled.div`
-  text-align: center;
   margin-bottom: 40px;
+  position: relative;
+  text-align: center;
 `;
 
 export const FilterWrapper = styled.div`
@@ -35,7 +35,11 @@ export const FilterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    gap: 8px;
+  }
 `;
 
 export const ButtonGoBack = styled.button`

@@ -12,6 +12,13 @@ export const StyledWrapper = styled.div`
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
   text-align: center;
+
+  @media (min-width: 320px) {
+    width: 290px;
+  }
+  @media (min-width: 410px) {
+    width: 380px;
+  }
 `;
 
 export const LogoImg = styled.img`
@@ -24,10 +31,14 @@ export const LogoImg = styled.img`
 
 export const Img = styled.img`
   position: absolute;
-  width: 308px;
-  height: 168px;
+
+  width: 78%;
   left: 36px;
   top: 28px;
+
+  @media (max-width: 410px) {
+    top: 48px;
+  }
 `;
 
 export const Line = styled.div`

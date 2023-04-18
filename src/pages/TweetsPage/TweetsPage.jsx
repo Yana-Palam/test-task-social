@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AiOutlineRollback } from 'react-icons/ai';
@@ -35,6 +35,8 @@ function TweetsPage() {
   const filter = useSelector(selectFilter);
   const page = useSelector(selectPage);
 
+  const [isVisibleBtn, setIsVisibleBtn] = useState(false);
+
   const fetchData = async () => {
     dispatch(fetchTweets({ filter, page }));
   };
@@ -43,6 +45,14 @@ function TweetsPage() {
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, filter]);
+
+  useEffect(() => {
+    const trigger = 350;
+
+    window.addEventListener('scroll', () => {
+      window.scrollY > trigger ? setIsVisibleBtn(true) : setIsVisibleBtn(false);
+    });
+  }, []);
 
   const onLoadMore = () => {
     dispatch(incrementPage());
@@ -71,8 +81,8 @@ function TweetsPage() {
             Load more
           </Button>
         )}
+        {isVisibleBtn && <ButtonUp />}
       </Wrapper>
-      <ButtonUp />
     </Container>
   );
 }
