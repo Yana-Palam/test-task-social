@@ -1,7 +1,7 @@
 <h1 align="center">Tweets</h1>
 <h2 align="center">Тестове завдання GOIT</h2>
 
-<img src="/assets/logoTweets.png" width="100%">
+<p align="center"><img src="/assets/logoTweets.png"></p>
 
 <h2 align="center"><a  href='https://yana-palam.github.io/test-task-social'>Жива сторінка</a></h2>
 
