@@ -1,14 +1,13 @@
 import styled from 'styled-components';
+import logo from '../../assets/images/logo.png';
+import image from '../../assets/images/picture.png';
 
 export const StyledWrapper = styled.div`
   position: relative;
   width: 380px;
-  background: linear-gradient(
-    114.99deg,
-    #471ca9 -0.99%,
-    #5736a3 54.28%,
-    #4b2a99 78.99%
-  );
+  background: url(${logo}) no-repeat 20px 20px,
+    url(${image}) no-repeat center 28px/78%,
+    linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
   text-align: center;
@@ -18,26 +17,6 @@ export const StyledWrapper = styled.div`
   }
   @media (min-width: 410px) {
     width: 380px;
-  }
-`;
-
-export const LogoImg = styled.img`
-  width: 76px;
-  height: 22px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-`;
-
-export const Img = styled.img`
-  position: absolute;
-
-  width: 78%;
-  left: 36px;
-  top: 28px;
-
-  @media (max-width: 410px) {
-    top: 48px;
   }
 `;
 
@@ -66,8 +45,8 @@ export const AvatarImg = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 62px;
-  height: 62px;
+  /* width: 62px;
+  height: 62px; */
   border-radius: 50%;
   object-fit: cover;
 `;

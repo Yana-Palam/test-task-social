@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import logo from '../../assets/images/logo.png';
-import image from '../../assets/images/picture.png';
-
 import {
   StyledWrapper,
-  LogoImg,
-  Img,
   AvatarWrapper,
   Line,
   AvatarImg,
@@ -43,11 +38,9 @@ function Tweet({ id, avatar, user, tweets, followers, isFollowing }) {
 
   return (
     <StyledWrapper>
-      <LogoImg src={logo} alt="Logo" />
-      <Img src={image} alt="image" />
       <Line>
         <AvatarWrapper>
-          <AvatarImg src={avatar} alt="User avatar" />
+          <AvatarImg src={avatar} alt="User avatar" width="62" height="62" />
         </AvatarWrapper>
       </Line>
 
