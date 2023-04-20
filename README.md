@@ -1,3 +1,5 @@
+**Читати іншою мовою: [Українська](README.md), [English](README.en.md).**
+
 <h1 align="center">Tweets</h1>
 <h2 align="center">Тестове завдання GOIT</h2>
 
